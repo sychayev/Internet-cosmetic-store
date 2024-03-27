@@ -5,65 +5,81 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- <link rel="stylesheet" href="css/fontello.css"> -->
 		<link rel="stylesheet" href="css/style.min.css">
+		<!-- <script defer src="js/main.js"></script> -->
 		<title>Document</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<div class="header__container _container">
-					<div class="header__logo">
+				<div class="header__container  _container">
+					<a href="#" class="header__image-logo">
 						<img src="images/logo-header.svg" alt="Logo header image">
+					</a>
+					<div class="header__burger-row">
+						<button class="header__burger-btn" id="burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<a href="#" class="header__burger-link" id="link">Menu</a>
 					</div>
-					<nav class="header__menu menu">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href class="menu__link">Catalog</a>
+					<nav class="header__menu" id="menu">
+						<ul class="header__items">
+							<li class="header__item">
+								<a href="#">Каталог</a>
 							</li>
-							<li class="menu__item">
-								<a href class="menu__link">Сhoose care</a>
+							<li class="header__item">
+								<a href="#">Подобрать уход</a>
 							</li>
-							<li class="menu__item">
-								<a href class="menu__link">Promotions</a>
+							<li class="header__item">
+								<a href="#">Акции</a>
 							</li>
-							<li class="menu__item">
-								<a href class="menu__link">Blog</a>
+							<li class="header__item">
+								<a href="#">Блог</a>
 							</li>
-							<li class="menu__item">
-								<a href class="menu__link">About brend &Del;</a>
-								<ul class="menu__sub-list">
-									<li class="menu__sub-item">
-										<a href class="menu__sub-link">Shipping and payment</a>
-									</li>
-									<li class="menu__sub-item">
-										<a href class="menu__sub-link">Where can i buy</a>
-									</li>
-									<li class="menu__sub-item">
-										<a href class="menu__sub-link">Loyalty program</a>
-									</li>
-									<li class="menu__sub-item">
-										<a href class="menu__sub-link">Contacts</a>
-									</li>
+							<li class="header__item">
+								<a href="#">О бренде &Del;</a>
+								<ul class="sub-items">
+									<li><a href="#">
+											Доставка и оплата
+										</a></li>
+									<li><a href="#">
+											Где купить
+										</a></li>
+									<li><a href="#">
+											Программа лояльности
+										</a></li>
+									<li><a href="#">
+											Контакты
+										</a></li>
 								</ul>
 							</li>
 						</ul>
 					</nav>
-					<div class="menu__icons-row row-icons">
-						<div class="row-icons__image">
+					<div class="header__row-icons">
+						<div class="header__row-icon-image">
 							<a href="#"><img src="images/header-search-icon.svg"
-									alt="Search icon image"></a>
+									alt="search image"></a>
 						</div>
-						<div class="row-icons__image">
-							<a href="#popup1"><img src="images/header-men-icon.svg"
-									alt="Men icon image"></a>
+						<div class="header__row-icon-image">
+							<a href="#"><img src="images/header-men-icon.svg"
+									alt="men icon image"></a>
 						</div>
-						<div class="row-icons__image">
+						<div class="header__row-icon-image">
 							<a href="#"><img src="images/header-heart-icon.svg"
-									alt="Heart icon image"></a>
+									alt="header heart icon"></a>
 						</div>
-						<div class="row-icons__image">
-							<a href="#popup2"><img src="images/header-bag-icon.svg"
-									alt="Bag icon image"></a>
+						<div class="header__row-icon-image">
+							<a href="#"><img src="images/header-bag-icon.svg"
+									alt="header bag icon"></a>
 						</div>
+					</div>
+					<div class="header__row-icons-ipad">
+						<div class="header__row-icon-image">
+							<a href="#"><img src="images/header-search-ipad.svg"
+									alt="search image"></a>
+						</div>
+
 					</div>
 					<div id="popup1" class="client__cabinet">
 						<div class="popup">
@@ -165,15 +181,18 @@
 					</div>
 				</div>
 			</header>
-			<main class="main">
 
+			<main class="main">
+				main
 			</main>
 			<footer class="footer">
-
+				footer
 			</footer>
 		</div>
 		<script>
-			src="js/main.min.js"
+			 src="js/main.min.js"
 		</script>
+		<script src="js/main.js"></script>
+
 	</body>
 </html>
