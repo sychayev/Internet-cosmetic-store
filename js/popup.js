@@ -33,3 +33,8 @@ document.getElementById("popup-a").addEventListener('click', event => {
 	if (event._isClickWithInModal) return;
 	event.currentTarget.classList.remove("open")
 });
+
+//----------------For heart in the image turn on red color ------
+document.getElementById("heart-choice").addEventListener("click", function () {
+	document.getElementById("heart-red-color").classList.add("open")
+})

@@ -1,7 +1,8 @@
-// $(function () {
-// })
 
-//---------------For menu ------------------
+
+//---------------FOR MENU ------------------
+
+
 //-------------- Open menu --------------------
 document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById("burger").addEventListener("click",
