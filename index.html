@@ -11,7 +11,7 @@
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<div class="header__container  _container">
+				<div id="desktop-menu" class="header__container  _container">
 					<a href="#" class="header__image-logo">
 						<img src="images/logo-header.svg" alt="Logo header image">
 					</a>
@@ -22,6 +22,17 @@
 							<span></span>
 						</button>
 						<a href="#" class="header__burger-link" id="link">Menu</a>
+						<a href="#" class="header__burger-link-search" id="link">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10.084 18.334C14.6403 18.334 18.334 14.6403 18.334 10.084C18.334 5.52763 14.6403 1.83398 10.084 1.83398C5.52763 1.83398 1.83398 5.52763 1.83398 10.084C1.83398 14.6403 5.52763 18.334 10.084 18.334Z"
+									stroke="black" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M20.1667 20.1667L16.5 16.5" stroke="black" stroke-width="2"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
 					</div>
 					<nav class="header__menu" id="menu">
 						<ul class="header__items">
@@ -74,12 +85,26 @@
 									alt="header bag icon"></a>
 						</div>
 					</div>
-					<div class="header__row-icons-ipad">
-						<div class="header__row-icon-image">
+					<!-- <div class="header__row-icons-ipad"> -->
+					<!-- <div class="header__row-icon-image">
 							<a href="#"><img src="images/header-search-ipad.svg"
 									alt="search image"></a>
-						</div>
+						</div> -->
+					<div class="search-form">
+						<input class="search-form__txt" type="text" placeholder="введите название">
+						<a href="#" class="search-form__btn">
+							<img src="images/header-search-ipad.svg" alt="search image"
+								class="search-form__image">
+						</a>
+					</div>
 
+					<div class="header__menu-mobile-row-icons">
+						<div class="header__menu-mobile-row-icons-image">
+							<img src="images/header-heart-icon.svg" alt="heart icon">
+						</div>
+						<div class="header__menu-mobile-row-icons-image">
+							<img src="images/header-bag-icon.svg" alt="bag icon">
+						</div>
 					</div>
 					<div id="popup-a" class="client-cabinet">
 						<div class="popup">
@@ -207,6 +232,7 @@
 			</header>
 
 			<main class="main">
+
 				main
 				<div class>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
 					reiciendis porro temporibus deleniti eos ipsa rem. Necessitatibus, totam.
@@ -268,6 +294,6 @@
 		<script>src="js/main.min.js"</script>
 		<script defer src="js/main.js"></script>
 		<script defer src="js/popup.js"></script>
-		<script defer src="js/popupb.js"></script>
+		<script defer src="js/searchinput.js"></script>
 	</body>
 </html>

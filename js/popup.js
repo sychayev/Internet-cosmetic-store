@@ -59,11 +59,6 @@ document.getElementById("close-popup-b").addEventListener("click", function () {
 	document.getElementById("popup-b").classList.remove("open")
 })
 
-// document.getElementById("close-submit-btn-popup-b").addEventListener("click", function () {
-// 	document.getElementById("popup-b").classList.remove("open")
-// })
-
-
 //---- Close popup when pushed page POPUP-B-------
 
 document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
@@ -74,16 +69,15 @@ document.getElementById("popup-b").addEventListener('click', event => {
 	event.currentTarget.classList.remove("open")
 });
 
+// --- Close popup when pushed page POPUP-B-------
 
-// document.querySelector("#popup-a .popup").addEventListener('click', event => {
+// document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
 // 	event._isClickWithInMen = true;
 // });
-// document.getElementById("popup-a").addEventListener('click', event => {
+// document.getElementById("popup-b").addEventListener('click', event => {
 // 	if (event._isClickWithInMen) return;
 // 	event.currentTarget.classList.remove("open")
 // });
-
-// --- Close popup when pushed page POPUP-B-------
 
 // document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
 // 	event._isClickWithInMen = true;
