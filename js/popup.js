@@ -41,38 +41,45 @@ document.getElementById("popup-a").addEventListener('click', event => {
 //-------------------------POPUP - B ----------------------
 //---------------------For open POPUP-B----------------------------
 
-// document.getElementById("open-popup-b").addEventListener("click", function () {
-// 	// alert("nshd")
-// 	document.getElementById("popup-b").classList.add("open")
-// })
+document.getElementById("open-popup-b").addEventListener("click", function () {
+	// alert("nshd")
+	document.getElementById("popup-b").classList.add("open")
+})
 
 // ----Close popup when button escape pushed POPUP-B------------
 
-// window.addEventListener('keydown', (e) => {
-// 	if (e.key === "Escape") {
-// 		document.getElementById("popup-b").classList.remove("open")
-// 	}
-// });
+window.addEventListener('keydown', (e) => {
+	if (e.key === "Escape") {
+		document.getElementById("popup-b").classList.remove("open")
+	}
+});
 
 //---------------------For close  button X --------------------------
-// document.getElementById("close-popup-b").addEventListener("click", function () {
+document.getElementById("close-popup-b").addEventListener("click", function () {
+	document.getElementById("popup-b").classList.remove("open")
+})
+
+// document.getElementById("close-submit-btn-popup-b").addEventListener("click", function () {
 // 	document.getElementById("popup-b").classList.remove("open")
 // })
-// ----Close popup when button escape pushed POPUP-B------------
 
-// window.addEventListener('keydown', (e) => {
-// 	if (e.key === "Escape") {
-// 		document.getElementById("popup-b").classList.remove("open")
-// 	}
-// });
 
 //---- Close popup when pushed page POPUP-B-------
 
-// document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
-// 	event._isClickWithInBasket = true;
+document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
+	event._isClickWithInBasket = true;
+});
+document.getElementById("popup-b").addEventListener('click', event => {
+	if (event._isClickWithInBasket) return;
+	event.currentTarget.classList.remove("open")
+});
+
+
+// document.querySelector("#popup-a .popup").addEventListener('click', event => {
+// 	event._isClickWithInMen = true;
 // });
-// document.getElementById("popup-b").addEventListener('click', event => {
-// 	if (event._isClickWithInBasket) return;
+// document.getElementById("popup-a").addEventListener('click', event => {
+// 	if (event._isClickWithInMen) return;
 // 	event.currentTarget.classList.remove("open")
 // });
 
