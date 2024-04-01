@@ -69,6 +69,24 @@ document.getElementById("popup-b").addEventListener('click', event => {
 	event.currentTarget.classList.remove("open")
 });
 
+//-------------------------POPUP - A 360px----------------------
+//---------------------For open POPUP-A----------------------------
+
+document.getElementById("open-popup-a-mobile").addEventListener("click", function () {
+	// alert("nshd")
+	document.getElementById("popup-a").classList.add("open")
+})
+
+//-------------------------POPUP - B 360px----------------------
+//---------------------For open POPUP-B----------------------------
+
+document.getElementById("open-popup-b-mobile").addEventListener("click", function () {
+	// alert("nshd")
+	document.getElementById("popup-b").classList.add("open")
+})
+
+
+
 // --- Close popup when pushed page POPUP-B-------
 
 // document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
