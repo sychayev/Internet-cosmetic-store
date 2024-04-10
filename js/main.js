@@ -99,19 +99,19 @@ new Swiper('.image-slider', {
 	watchOverflow: true,
 
 	// Quantity moving slides(Количество движущихся слайдов)
-	slidesPerGroup: 3,
+	// slidesPerGroup: 3,
 
 	//Active slide in center(Активный слайд в центре)
 	centerSlides: true,
 
 	//Start slide(Начать слайд)
-	// initialSlides: 0,
+	initialSlides: 2,
 	
 	//MultiColumns(Мультирядность)
 	// slidesPerColumn: 2,
 
 	//Infinity slider(Бусконечный слайдер)
-	// loop: true,
+	loop: true,
 
 	//Quintity double slides(Количество дублируемых слайдов)
 	loopedSlides: 5,
@@ -137,11 +137,11 @@ new Swiper('.image-slider', {
 	// effect: 'fade',
 	
 	//Addition to fade(Дополнение к fade)
-	// fadeEffect: {
+	fadeEffect: {
 	//Parallel(Параллельная)
 	// Change transparency(Смена прозрачности)
-	// crossFade: true
-	// },
+	crossFade: true
+	},
 	
 	//Effects switching slides(Эффект переключения слайдов)
 	//Flip (Переворот)
@@ -160,27 +160,27 @@ new Swiper('.image-slider', {
 	// effect: 'cube',
 
 	//Addition to cube
-	// cubeEffect: {
+	cubeEffect: {
 	//Settings menu
-	// 	slideShadows: true,
-	// 	shadow: true,
-	// 	shadowOffset: 20,
-	// 	shadowScale: 0.94
-	// },
+		slideShadows: true,
+		shadow: true,
+		shadowOffset: 20,
+		shadowScale: 0.94
+	},
 	
 	//Effects switching slides(Эффект переключения слайдов)
 	//Flow effect(Эффект потока)
-	// effect: 'coverflow',
+	effect: 'coverflow',
 
 	//Addition to coverflow
-	// coverFlowEffect: {
+	coverFlowEffect: {
 		//Corner (Угол)
-		// rotate: 20,
+		rotate: 0,
 		//Overlay (Наложение)
 		// stretch: 50,
 		//Shadow (Тень)
 		// slideShadows: true,
-	// },
+	},
 	
 	//ADAPTIVE
 	//Width screen
