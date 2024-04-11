@@ -4,15 +4,17 @@
 new Swiper('.image-slider', {
 	// ARROWS
 	navigation: {
-		nextEl: '.swiper-button-next',
-		nextEl: '.swiper-button-prev'
+		// nextEl: '.swiper-button-next',
+		// prevEl: '.swiper-button-prev'
+		nextEl: '.row-product__arow-left',
+		prevEl: '.row-product__arow-right'
 	},
 	//Navigation
 	//Bullets, current position , progressbar
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.row-product__swiper-pagination',
 		//      Bullets
-		// clickable: true,
+		clickable: true,
 		//     Dinamiс bullets
 		// dynamicBullets: true,
 		//     Custom bullets
@@ -25,7 +27,7 @@ new Swiper('.image-slider', {
 		// Custom out fraction
 		renderFraction: function (currentClass, totalClass) {
 			return 'Foto <span class="' + currentClass + '"></span>' +
-				' from ' +
+				' to ' +
 				'<span class="' + totalClass + '"></span>';
 		},
 		//     Progressbar
@@ -33,7 +35,7 @@ new Swiper('.image-slider', {
 	},
 	//-           Scroll
 	scrollbar: {
-		el: '.swiper-scrollbar',
+		el: '.row-product__swiper-scrollbar',
 		// Opurtunity move scroll
 		draggable: true
 	},
@@ -88,33 +90,33 @@ new Swiper('.image-slider', {
 
 	//Quantity for show(Количество для просмотра)
 	// slidesPerView: 'auto',
-	slidesPerView: '3',
+	slidesPerView: '7.5',
 
-	//Margin between objects(Отступ между объектами)
-	spaceBetween: 1,
+	//Margin between objects(Отступ между слайдами)
+	// spaceBetween: 1,
 
 	//Turn off function
 	//if slides less than need(Выключить функцию
 	//если слайдов меньше, чем нужно)
-	watchOverflow: true,
+	// watchOverflow: true,
 
 	// Quantity moving slides(Количество движущихся слайдов)
-	// slidesPerGroup: 3,
+	// slidesPerGroup: 1,
 
 	//Active slide in center(Активный слайд в центре)
-	centerSlides: true,
+	// centerSlides: true,
 
 	//Start slide(Начать слайд)
-	initialSlides: 2,
+	// initialSlides: 1,
 	
 	//MultiColumns(Мультирядность)
 	// slidesPerColumn: 2,
 
-	//Infinity slider(Бусконечный слайдер)
+	//Infinity slider(Бeсконечный слайдер)
 	loop: true,
 
 	//Quintity double slides(Количество дублируемых слайдов)
-	loopedSlides: 5,
+	// loopedSlides: 0,
 
 	//Free Mode (Свободный режим автопрокрутка)
 	// autoplay: {
@@ -137,11 +139,11 @@ new Swiper('.image-slider', {
 	// effect: 'fade',
 	
 	//Addition to fade(Дополнение к fade)
-	fadeEffect: {
+	// fadeEffect: {
 	//Parallel(Параллельная)
 	// Change transparency(Смена прозрачности)
-	crossFade: true
-	},
+	// crossFade: true
+	// },
 	
 	//Effects switching slides(Эффект переключения слайдов)
 	//Flip (Переворот)
@@ -160,41 +162,51 @@ new Swiper('.image-slider', {
 	// effect: 'cube',
 
 	//Addition to cube
-	cubeEffect: {
+	// cubeEffect: {
 	//Settings menu
-		slideShadows: true,
-		shadow: true,
-		shadowOffset: 20,
-		shadowScale: 0.94
-	},
+		// slideShadows: true,
+		// shadow: true,
+		// shadowOffset: 20,
+		// shadowScale: 0.94
+	// },
 	
 	//Effects switching slides(Эффект переключения слайдов)
 	//Flow effect(Эффект потока)
-	effect: 'coverflow',
+	// effect: 'coverflow',
 
 	//Addition to coverflow
-	coverFlowEffect: {
+	// coverFlowEffect: {
 		//Corner (Угол)
-		rotate: 0,
+		// rotate: 0,
 		//Overlay (Наложение)
 		// stretch: 50,
 		//Shadow (Тень)
 		// slideShadows: true,
-	},
+	// },
 	
 	//ADAPTIVE
-	//Width screen
-	// breakpoint: {
-	// 	320: {
-	// 		slidesPerView: 1,
-	// 	},
-	// 	480: {
-	// 		slidesPerView: 2,
-	// 	},
-	// 	922: {
-	// 		slidesPerView: 3,
-	// 	}
-	// },
+	// Width screen
+	breakpoints: {
+		280: {
+			slidesPerView: 1.2,
+		},
+		320: {
+			slidesPerView: 1.2,
+		},
+		480: {
+			slidesPerView: 2.2,
+		},
+		922: {
+			slidesPerView: 3.2,
+		},
+		1020: {
+			slidesPerView: 5.2,
+		},
+		1270: {
+			slidesPerView: 6.2,
+		},
+		
+	},
 
 	//ADAPTIVE version swiper after 5.3.0
 	//Соотношение сторон ВЫСОТА  /  ШИРИНА
