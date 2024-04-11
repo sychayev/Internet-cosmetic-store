@@ -34,11 +34,11 @@ new Swiper('.image-slider', {
 		//  type: 'progressbar',
 	},
 	//-           Scroll
-	scrollbar: {
-		el: '.row-product__swiper-scrollbar',
-		// Opurtunity move scroll
-		draggable: true
-	},
+	// scrollbar: {
+	// 	el: '.row-product__swiper-scrollbar',
+	// 	// Opurtunity move scroll
+	// 	draggable: true
+	// },
 	
 	//    Turn on / Turn off
 	//    Move to PC
