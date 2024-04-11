@@ -188,10 +188,10 @@ new Swiper('.image-slider', {
 	// Width screen
 	breakpoints: {
 		280: {
-			slidesPerView: 1.2,
+			slidesPerView: 1.4,
 		},
 		320: {
-			slidesPerView: 1.2,
+			slidesPerView: 1.7,
 		},
 		480: {
 			slidesPerView: 2.2,
@@ -204,7 +204,7 @@ new Swiper('.image-slider', {
 		},
 		1270: {
 			slidesPerView: 6.2,
-		},
+		}
 		
 	},
 
