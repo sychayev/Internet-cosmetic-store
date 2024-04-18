@@ -90,7 +90,7 @@ new Swiper('.image-slider', {
 
 	//Quantity for show(Количество для просмотра)
 	// slidesPerView: 'auto',
-	slidesPerView: '7.5',
+	slidesPerView: '8',
 
 	//Margin between objects(Отступ между слайдами)
 	// spaceBetween: 1,
@@ -315,7 +315,6 @@ new Swiper('.swiper', {
 	touchAngle: 45,
 	//    Grab  cursor
 	grabCursor: true,
-
 	//Switching click to slide
 	slideToClickSlide: true,
 
@@ -356,10 +355,10 @@ new Swiper('.swiper', {
 
 	//Quantity for show(Количество для просмотра)
 	// slidesPerView: 'auto',
-	slidesPerView: '7.5',
+	slidesPerView: '10',
 
 	//Margin between objects(Отступ между слайдами)
-	spaceBetween: 1,
+	// spaceBetween: 1,
 
 	//Turn off function
 	//if slides less than need(Выключить функцию
@@ -434,6 +433,10 @@ new Swiper('.swiper', {
 		// shadow: true,
 		// shadowOffset: 20,
 		// shadowScale: 0.94
+	// 	slideShadows: false,
+	// 	shadow: false,
+	// 	shadowOffset: 20,
+	// 	shadowScale: 0.94
 	// },
 	
 	//Effects switching slides(Эффект переключения слайдов)
@@ -445,25 +448,25 @@ new Swiper('.swiper', {
 		//Corner (Угол)
 		// rotate: 0,
 		//Overlay (Наложение)
-		// stretch: 50,
+		// stretch: 10,
 		//Shadow (Тень)
-		// slideShadows: true,
+	// 	slideShadows: false,
 	// },
 	
 	//ADAPTIVE
 	// Width screen
 	breakpoints: {
 		280: {
-			slidesPerView: 1.4,
+			slidesPerView: 1,
 		},
 		320: {
-			slidesPerView: 1.7,
+			slidesPerView: 1,
 		},
 		480: {
-			slidesPerView: 2.2,
+			slidesPerView: 2,
 		},
 		922: {
-			slidesPerView: 3.2,
+			slidesPerView: 3,
 		},
 		1020: {
 			slidesPerView: 5.2,
