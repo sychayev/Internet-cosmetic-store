@@ -852,8 +852,10 @@ $('.carousel__inner').slick({
 	adaptiveHeight: true,
 	// autoplay: true,
 	// autoplaySpeed: 1200,
-	prevArrow: '<button type="button" class="slick-prev"><img src="images/bestseller-arrow-left.svg"></button>',
-	nextArrow: '<button type="button" class="slick-next"><img src="images/bestseller-arrow-right.svg"></button>',
+	// prevArrow: '<button type="button" class="slick-prev"><img src="images/bestseller-arrow-left.svg"></button>',
+	// nextArrow: '<button type="button" class="slick-next"><img src="images/bestseller-arrow-right.svg"></button>',
+	prevArrow: '.body-arrow__slick-prev',
+	nextArrow: '.body-arrow__slick-next',
 	// responsive: [
 	// 	{
 	// 		breakpoint: 992,
@@ -872,7 +874,7 @@ $('.carousel__inner').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+      //   dots: true
       }
     },
     {
