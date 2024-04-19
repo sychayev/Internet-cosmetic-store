@@ -863,7 +863,8 @@ $('.carousel__inner').slick({
 	// 			dots: true,
 	// 			arrows: false
 	// 		}
-	// 	}
+	// 	}gulp
+	
 	// ]
 	slidesToShow: 4,
   slidesToScroll: 2,
@@ -902,4 +903,3 @@ $('.carousel__inner').slick({
 		}
 	]
  });
-	
