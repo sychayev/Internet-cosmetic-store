@@ -848,7 +848,7 @@ $('.carousel__inner').slick({
 	//arrows: false,
 	slidesToShow: 7,
 	slidesToScroll: 1,
-	speed: 3000,
+	speed: 2500,
 	adaptiveHeight: true,
 	autoplay: true,
 	autoplaySpeed: 1200,
