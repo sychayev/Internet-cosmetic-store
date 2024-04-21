@@ -851,7 +851,7 @@ $('.carousel__inner').slick({
 	speed: 2500,
 	adaptiveHeight: true,
 	autoplay: true,
-	autoplaySpeed: 1200,
+	autoplaySpeed: 1000,
 	// prevArrow: '<button type="button" class="slick-prev"><img src="images/bestseller-arrow-left.svg"></button>',
 	// nextArrow: '<button type="button" class="slick-next"><img src="images/bestseller-arrow-right.svg"></button>',
 	prevArrow: '.body-arrow__slick-prev',
