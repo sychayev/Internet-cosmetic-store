@@ -605,6 +605,78 @@ $('.carousel__inner').slick({
       }
 		}
 	]
+});
+ 
+// ---------   SLIDER press about us BESTSELLERS  ------------------------
+
+ $('.press-about-us__adds-row').slick({
+	// fade: true,
+	// cssEase: 'linear',
+	//infinite: true,
+	//dots: true,
+	//slidesToShow: 1,
+	centerMode: true,
+	// variableWidth: true,
+	//arrows: false,
+	slidesToShow: 7,
+	slidesToScroll: 1,
+	speed: 1800,
+	// adaptiveHeight: true,
+	// autoplay: true,
+	// autoplaySpeed: 1000,
+	// prevArrow: '<button type="button" class="slick-prev"><img src="images/bestseller-arrow-left.svg"></button>',
+	// nextArrow: '<button type="button" class="slick-next"><img src="images/bestseller-arrow-right.svg"></button>',
+	prevArrow: '.press-about-us-arrows__slick-prev',
+	nextArrow: '.press-about-us-arrows__slick-next',
+	// responsive: [
+	// 	{
+	// 		breakpoint: 992,
+	// 		settings: {
+	// 			dots: true,
+	// 			arrows: false
+	// 		}
+	// 	}gulp
+	
+	// ]
+	slidesToShow: 4,
+  slidesToScroll: 2,
+	responsive: [
+  {
+      breakpoint: 1550,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+			slidesToScroll: 1,
+	     fade: true,
+			centerMode: true,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+			slidesToScroll: 1,
+	     fade: true,
+		centerMode: true
+		  
+      }
+		}
+	]
  });
 
 //---------------FOR MENU ------------------
