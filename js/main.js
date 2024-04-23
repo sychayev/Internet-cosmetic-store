@@ -612,15 +612,22 @@ $('.carousel__inner').slick({
  $('.press-about-us__adds-row').slick({
 	// fade: true,
 	// cssEase: 'linear',
-	//infinite: true,
+	// infinite: true,
 	//dots: true,
 	//slidesToShow: 1,
-	centerMode: true,
 	// variableWidth: true,
 	//arrows: false,
 	slidesToShow: 7,
 	slidesToScroll: 1,
-	speed: 1800,
+	 speed: 800,
+	//   slidesToShow: 3,
+    // initialSlide: 2,
+   //  centerMode: true,
+   //  centerPadding: "53px",
+   //  arrows: true,
+   //  dots: false,
+    infinite: true,
+    cssEase: 'linear',
 	// adaptiveHeight: true,
 	// autoplay: true,
 	// autoplaySpeed: 1000,
@@ -662,8 +669,8 @@ $('.carousel__inner').slick({
       settings: {
         slidesToShow: 1,
 			slidesToScroll: 1,
-	     fade: true,
-			centerMode: true,
+	   //   fade: true,
+		// 	centerMode: true,
       }
     },
     {
@@ -671,8 +678,8 @@ $('.carousel__inner').slick({
       settings: {
         slidesToShow: 1,
 			slidesToScroll: 1,
-	     fade: true,
-		centerMode: true
+	   //   fade: true,
+		// centerMode: true
 		  
       }
 		}
