@@ -634,7 +634,7 @@ $('.carousel__inner').slick({
 	// prevArrow: '<button type="button" class="slick-prev"><img src="images/bestseller-arrow-left.svg"></button>',
 	// nextArrow: '<button type="button" class="slick-next"><img src="images/bestseller-arrow-right.svg"></button>',
 	prevArrow: '.press-about-us-arrows__slick-prev',
-	nextArrow: '.press-about-us-arrows__slick-next',
+	 nextArrow: '.press-about-us-arrows__slick-next',
 	// responsive: [
 	// 	{
 	// 		breakpoint: 992,
@@ -642,8 +642,7 @@ $('.carousel__inner').slick({
 	// 			dots: true,
 	// 			arrows: false
 	// 		}
-	// 	}gulp
-	
+	// 	}
 	// ]
 	slidesToShow: 4,
   slidesToScroll: 2,
@@ -686,6 +685,27 @@ $('.carousel__inner').slick({
 	]
  });
 
+
+// ---------   SLIDER blog news block ------------------------
+
+var mySwiper = new Swiper("#mySwiper", {
+	navigation: {
+		
+		nextEl: '.blog-swiper__slick-prev',
+		prevEl: '.blog-swiper__slick-next'
+	},
+	loop: true,
+	effect: "cube",
+      cubeEffect: {
+        shadow: false,
+        slideShadows: false,
+      //   shadowOffset: 20,
+      //   shadowScale: 0.94,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
 //---------------FOR MENU ------------------
 
 //-------------- Open menu --------------------
