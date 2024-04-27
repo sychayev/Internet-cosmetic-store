@@ -686,25 +686,63 @@ $('.carousel__inner').slick({
  });
 
 
-// ---------   SLIDER blog news block ------------------------
+// ---------  3D cube swiper blog news block ------------------------
 
 var mySwiper = new Swiper("#mySwiper", {
 	navigation: {
-		
 		nextEl: '.blog-swiper__slick-prev',
 		prevEl: '.blog-swiper__slick-next'
 	},
+	//    Turn on / Turn off
+	//    Move to PC
+	simulateTouch: false,
+
+	//   Ratio swipe
+	touchRatio: 1,
+	//   actuation: angle,
+	touchAngle: 45,
+	//    Grab  cursor
+	grabCursor: false,
+	//Switching click to slide
+	slideToClickSlide: false,
 	loop: true,
 	effect: "cube",
       cubeEffect: {
         shadow: false,
         slideShadows: false,
       //   shadowOffset: 20,
-      //   shadowScale: 0.94,
+			//   shadowScale: 0.94,
+		   // shadow: true,
+      //   slideShadows: true,
+      //   shadowOffset: 50,
+      //   shadowScale: 0.95,
       },
-      pagination: {
-        el: ".swiper-pagination",
-      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+	// },
+		breakpoints: {
+		280: {
+				slidesPerView: 1,
+		},
+		320: {
+			slidesPerView: 1,
+		},
+		480: {
+			slidesPerView: 1,
+		},
+		922: {
+			slidesPerView: 1,
+		},
+		1020: {
+			slidesPerView: 1,
+		},
+		1270: {
+			slidesPerView: 1,
+	// simulateTouch: false,
+
+		}
+		
+		},
     });
 //---------------FOR MENU ------------------
 
