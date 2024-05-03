@@ -695,7 +695,12 @@ let mySwiper = new Swiper("#mySwiper", {
 	},
 	//    Turn on / Turn off
 	//    Move to PC
+	//Autoheight slider(Ползунок автоматической высоты)
+	autoHeight: true,
 
+	//Quantity for show(Количество для просмотра)
+	// slidesPerView: 'auto',
+	slidesPerView: '1',
 	//   Ratio swipe
 	touchRatio: 0,
 	//   actuation: angle,
@@ -708,7 +713,7 @@ let mySwiper = new Swiper("#mySwiper", {
 	// effect: "cube",
 	// cubeEffect: {
 	// simulateTouch: false,
-   //      shadow: false,
+      //   shadow: false,
    //      slideShadows: false,
    //      shadowOffset: 20,
 	// 		  shadowScale: 0.94,
@@ -742,16 +747,29 @@ let mySwiper = new Swiper("#mySwiper", {
 	speed: 800,
 	//Effects switching slides(Эффект переключения слайдов)
 	//Flip (Переворот)
-	effect: 'flip',
+	// effect: 'flip',
 
 	//Addition to Flip (Дополнение к Flip)
-	flipEffect: {
+	// flipEffect: {
 	//Shadow(Тень)
-	slideShadows: true,
+	// slideShadows: true,
 	//Show just one slide (Показ только одного слайда)
-	limitRotation: true
-	},
+	// limitRotation: true
+	// },
 
+	//Effects switching slides(Эффект переключения слайдов)
+	//Flow effect(Эффект потока)
+	effect: 'coverflow',
+
+	//Addition to coverflow
+	coverFlowEffect: {
+		//Corner (Угол)
+		rotate: 0,
+		//Overlay (Наложение)
+		stretch: 50,
+		//Shadow (Тень)
+		slideShadows: true,
+	},
       // pagination: {
       //   el: ".swiper-pagination",
 	// },
