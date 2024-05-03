@@ -700,15 +700,15 @@ let mySwiper = new Swiper("#mySwiper", {
 
 	//Quantity for show(Количество для просмотра)
 	// slidesPerView: 'auto',
-	slidesPerView: '1',
+	// slidesPerView: '1',
 	//   Ratio swipe
-	touchRatio: 0,
+	touchRatio: 1,
 	//   actuation: angle,
 	touchAngle: 45,
 	//    Grab  cursor
-	grabCursor:true,
+	// grabCursor:true,
 	//Switching click to slide
-	slideToClickSlide: false,
+	slideToClickSlide: true,
 	loop: true,
 	// effect: "cube",
 	// cubeEffect: {
@@ -729,16 +729,16 @@ let mySwiper = new Swiper("#mySwiper", {
 		sensitivity: 1,
 		// Object class to turn on
 		scrollmouse: true,
-		eventsTarget: ".image-slider"
+		eventsTarget: "#mySwiper"
 	},
 	//Autoheight slider(Ползунок автоматической высоты)
-	autoHeight: true,
+	// autoHeight: true,
 	//Free Mode (Свободный режим автопрокрутка)
 	autoplay: {
 	//Pause between scrolling(пауза между прокруткой)
-	delay: 2000,
+	delay: 2500,
 	//Finish last slide (Закончить на последнем слайде)
-	stopOnSlide: true,
+	stopOnSlide: false,
 	//Turn off after manual switch (Отключить после 
 	//ручного переключения)
 	disableOnInteraction: false,
