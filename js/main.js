@@ -11,10 +11,10 @@ new Swiper('.image-slider', {
 	},
 	//Navigation
 	//Bullets, current position , progressbar
-	pagination: {
-		el: '.row-product__swiper-pagination',
+	// pagination: {
+		// el: '.row-product__swiper-pagination',
 		//      Bullets
-		clickable: true,
+		// clickable: true,
 		//     Dinamiс bullets
 		// dynamicBullets: true,
 		//     Custom bullets
@@ -23,16 +23,16 @@ new Swiper('.image-slider', {
 		// 		+ (index + 1) + '</span>';
 		// },
 		//     Fraction
-		type: 'fraction',
+		// type: 'fraction',
 		// Custom out fraction
-		renderFraction: function (currentClass, totalClass) {
-			return 'Foto <span class="' + currentClass + '"></span>' +
-				' to ' +
-				'<span class="' + totalClass + '"></span>';
-		},
+		// renderFraction: function (currentClass, totalClass) {
+		// 	return 'Foto <span class="' + currentClass + '"></span>' +
+		// 		' to ' +
+		// 		'<span class="' + totalClass + '"></span>';
+		// },
 		//     Progressbar
 		//  type: 'progressbar',
-	},
+	// },
 	//-           Scroll
 	// scrollbar: {
 	// 	el: '.row-product__swiper-scrollbar',
@@ -44,9 +44,9 @@ new Swiper('.image-slider', {
 	//    Move to PC
 	simulateTouch: true,
 	//   Ratio swipe
-	touchRatio: 1,
+	// touchRatio: 1,
 	//   actuation angle
-	touchAngle: 45,
+	// touchAngle: 45,
 	//    Grab  cursor
 	grabCursor: true,
 
@@ -436,7 +436,7 @@ new Swiper('.swiper', {
 	// 	slideShadows: false,
 	// 	shadow: false,
 	// 	shadowOffset: 20,
-	// 	shadowScale: 0.94
+	// 	shadowScale: 0.95
 	// },
 	
 	//Effects switching slides(Эффект переключения слайдов)
@@ -688,63 +688,103 @@ $('.carousel__inner').slick({
 
 // ---------  3D cube swiper blog news block ------------------------
 
-var mySwiper = new Swiper("#mySwiper", {
+let mySwiper = new Swiper("#mySwiper", {
 	navigation: {
 		nextEl: '.blog-swiper__slick-prev',
 		prevEl: '.blog-swiper__slick-next'
 	},
 	//    Turn on / Turn off
 	//    Move to PC
-	simulateTouch: false,
 
 	//   Ratio swipe
-	touchRatio: 1,
+	touchRatio: 0,
 	//   actuation: angle,
 	touchAngle: 45,
 	//    Grab  cursor
-	grabCursor: false,
+	grabCursor:true,
 	//Switching click to slide
 	slideToClickSlide: false,
 	loop: true,
-	effect: "cube",
-      cubeEffect: {
-        shadow: false,
-        slideShadows: false,
-      //   shadowOffset: 20,
-			//   shadowScale: 0.94,
+	// effect: "cube",
+	// cubeEffect: {
+	// simulateTouch: false,
+   //      shadow: false,
+   //      slideShadows: false,
+   //      shadowOffset: 20,
+	// 		  shadowScale: 0.94,
 		   // shadow: true,
-      //   slideShadows: true,
-      //   shadowOffset: 50,
-      //   shadowScale: 0.95,
-      },
+   //      slideShadows: true,
+   //      shadowOffset: 50,
+   //      shadowScale: 0.95,
+	// },
+	
+		//Navigation with mouse
+	mousewheel: {
+		//Sensitivity mouse wheel(Чувствительность колеса мыши)
+		sensitivity: 1,
+		// Object class to turn on
+		scrollmouse: true,
+		eventsTarget: ".image-slider"
+	},
+	//Autoheight slider(Ползунок автоматической высоты)
+	autoHeight: true,
+	//Free Mode (Свободный режим автопрокрутка)
+	autoplay: {
+	//Pause between scrolling(пауза между прокруткой)
+	delay: 2000,
+	//Finish last slide (Закончить на последнем слайде)
+	stopOnSlide: true,
+	//Turn off after manual switch (Отключить после 
+	//ручного переключения)
+	disableOnInteraction: false,
+	},
+	//Speed autoplay(Скорость свободного режима)
+	speed: 800,
+	//Effects switching slides(Эффект переключения слайдов)
+	//Flip (Переворот)
+	effect: 'flip',
+
+	//Addition to Flip (Дополнение к Flip)
+	flipEffect: {
+	//Shadow(Тень)
+	slideShadows: true,
+	//Show just one slide (Показ только одного слайда)
+	limitRotation: true
+	},
+
       // pagination: {
       //   el: ".swiper-pagination",
 	// },
+	
 		breakpoints: {
 		280: {
 				slidesPerView: 1,
+			
 		},
 		320: {
 			slidesPerView: 1,
+
 		},
 		480: {
 			slidesPerView: 1,
+
 		},
 		922: {
 			slidesPerView: 1,
+
 		},
 		1020: {
 			slidesPerView: 1,
 		},
 		1270: {
 			slidesPerView: 1,
-	// simulateTouch: false,
 
 		}
 		
 		},
-    });
-//---------------FOR MENU ------------------
+});
+	 
+//------------FOR MENU ------------------
 
 //-------------- Open menu --------------------
 document.addEventListener("DOMContentLoaded", function () {
