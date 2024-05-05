@@ -701,14 +701,16 @@ let mySwiper = new Swiper("#mySwiper", {
 	//Quantity for show(Количество для просмотра)
 	// slidesPerView: 'auto',
 	// slidesPerView: '1',
+
+	simulateTouch: false,
 	//   Ratio swipe
-	touchRatio: 1,
+	touchRatio: 0,
 	//   actuation: angle,
-	touchAngle: 45,
+	touchAngle: 0,
 	//    Grab  cursor
-	// grabCursor:true,
+	grabCursor:false,
 	//Switching click to slide
-	slideToClickSlide: true,
+	slideToClickSlide:false,
 	loop: true,
 	// effect: "cube",
 	// cubeEffect: {
@@ -760,15 +762,14 @@ let mySwiper = new Swiper("#mySwiper", {
 	//Effects switching slides(Эффект переключения слайдов)
 	//Flow effect(Эффект потока)
 	effect: 'coverflow',
-
 	//Addition to coverflow
 	coverFlowEffect: {
 		//Corner (Угол)
 		rotate: 0,
 		//Overlay (Наложение)
-		stretch: 50,
+		stretch: 0,
 		//Shadow (Тень)
-		slideShadows: true,
+		slideShadows: false,
 	},
       // pagination: {
       //   el: ".swiper-pagination",
@@ -777,22 +778,45 @@ let mySwiper = new Swiper("#mySwiper", {
 		breakpoints: {
 		280: {
 				slidesPerView: 1,
-			
+			   simulateTouch: false,
+	        //   Ratio swipe
+	         touchRatio: 0,
+      	  //   actuation: angle,
+	         touchAngle: 0,
+	
 		},
 		320: {
 			slidesPerView: 1,
+         simulateTouch: false,
+	      //   Ratio swipe
+	      touchRatio: 0,
+	      //   actuation: angle,
+	      touchAngle: 0,
 
 		},
 		480: {
 			slidesPerView: 1,
-
+         simulateTouch: false,
+	      //   Ratio swipe
+	      touchRatio: 0,
+	      //   actuation: angle,
+	      touchAngle: 0,
 		},
 		922: {
 			slidesPerView: 1,
-
+         simulateTouch: false,
+	      //   Ratio swipe
+	      touchRatio: 0,
+	      //   actuation: angle,
+	      touchAngle: 0,
 		},
 		1020: {
 			slidesPerView: 1,
+         simulateTouch: false,
+	      //   Ratio swipe
+	      touchRatio: 0,
+	      //   actuation: angle,
+	      touchAngle: 0,
 		},
 		1270: {
 			slidesPerView: 1,
