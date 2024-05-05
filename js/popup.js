@@ -61,7 +61,7 @@ document.getElementById("close-popup-b").addEventListener("click", function () {
 
 //---- Close popup when pushed page POPUP-B-------
 
-document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
+document.querySelector(".popup-basket").addEventListener('click', event => {
 	event._isClickWithInBasket = true;
 });
 document.getElementById("popup-b").addEventListener('click', event => {
@@ -85,28 +85,48 @@ document.getElementById("open-popup-b-mobile").addEventListener("click", functio
 	document.getElementById("popup-b").classList.add("open")
 })
 
-
-
 // --- Close popup when pushed page POPUP-B-------
 
-// document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
-// 	event._isClickWithInMen = true;
-// });
-// document.getElementById("popup-b").addEventListener('click', event => {
-// 	if (event._isClickWithInMen) return;
-// 	event.currentTarget.classList.remove("open")
-// });
+document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
+	event._isClickWithInMen = true;
+});
+document.getElementById("popup-b").addEventListener('click', event => {
+	if (event._isClickWithInMen) return;
+	event.currentTarget.classList.remove("open")
+});
 
-// document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
-// 	event._isClickWithInMen = true;
-// });
-// document.getElementById("popup-b").addEventListener('click', event => {
-// 	if (event._isClickWithInMen) return;
-// 	event.currentTarget.classList.remove("open")
-// });
+document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
+	event._isClickWithInMen = true;
+});
+document.getElementById("popup-b").addEventListener('click', event => {
+	if (event._isClickWithInMen) return;
+	event.currentTarget.classList.remove("open")
+});
 
 //----------------For heart in the image turn on red color ------
 
 // document.getElementById("heart-choice").addEventListener("click", function () {
 // 	document.getElementById("heart-red-color").classList.add("open")
 // })
+
+//-------------------------POPUP - A Mobile block----------------------
+//---------------------For open POPUP-A----------------------------
+
+document.getElementById("mobile-block-open-popup-a").addEventListener("click", function () {
+	// alert("nshd")
+	document.getElementById("popup-a").classList.add("open")
+})
+
+
+//-------------------------POPUP - B Mobile block----------------------
+//---------------------For open POPUP-B----------------------------
+
+document.getElementById("mobile-block-open-popup-b").addEventListener("click", function () {
+	// alert("nshd")
+	document.getElementById("popup-b-mobile").classList.add("open")
+})
+
+//---------------------For close  button X POPUP - B Mobile block --------------------------
+document.getElementById("close-popup-b").addEventListener("click", function () {
+	document.getElementById("popup-b-mobile").classList.remove("open")
+})
