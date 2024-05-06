@@ -61,9 +61,10 @@ document.getElementById("close-popup-b").addEventListener("click", function () {
 
 //---- Close popup when pushed page POPUP-B-------
 
-document.querySelector(".popup-basket").addEventListener('click', event => {
+document.querySelector("#popup-b .popup-basket").addEventListener('click', event => {
 	event._isClickWithInBasket = true;
 });
+
 document.getElementById("popup-b").addEventListener('click', event => {
 	if (event._isClickWithInBasket) return;
 	event.currentTarget.classList.remove("open")
@@ -128,5 +129,5 @@ document.getElementById("mobile-block-open-popup-b").addEventListener("click", f
 
 //---------------------For close  button X POPUP - B Mobile block --------------------------
 document.getElementById("close-popup-b").addEventListener("click", function () {
-	document.getElementById("popup-b-mobile").classList.remove("open")
+	document.getElementById("mobile-block-open-popup-b").classList.remove("open")
 })
