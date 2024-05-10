@@ -118,16 +118,51 @@ document.getElementById("mobile-block-open-popup-a").addEventListener("click", f
 	document.getElementById("popup-a").classList.add("open")
 })
 
-
 //-------------------------POPUP - B Mobile block----------------------
-//---------------------For open POPUP-B----------------------------
+//---------------------For open POPUP-B Mobile----------------------------
 
-document.getElementById("mobile-block-open-popup-b").addEventListener("click", function () {
-	// alert("nshd")
-	document.getElementById("popup-b-mobile").classList.add("open")
+// document.getElementById("mobile-block-open-popup-b").addEventListener("click", function () {
+// 	document.getElementById("popup-b-mobile").classList.add("open")
+// })
+
+//---------------------For close  button X POPUP B Mobile block --------------------------
+
+document.getElementById("#close-popup-b-mobile").addEventListener("click", function () {
+	document.getElementById(".popup").classList.remove("open")
 })
 
-//---------------------For close  button X POPUP - B Mobile block --------------------------
+document.getElementById("close-popup-b-mobile").addEventListener("click", function () {
+	document.getElementById("client-cabinet").classList.remove("open")
+})
+
+//---------------------For close  button X --------------------------
+
 document.getElementById("close-popup-b").addEventListener("click", function () {
-	document.getElementById("mobile-block-open-popup-b").classList.remove("open")
+	document.getElementById("popup-b").classList.remove("open")
 })
+
+// ----Close popup when button escape pushed POPUP-B Mobile block-----------
+
+window.addEventListener('keydown', (e) => {
+	if (e.key === "Escape") {
+		document.getElementById("popup-b-mobile").classList.remove("open")
+	}
+});
+
+// --- Close popup when pushed page POPUP-B Mobile block-------
+
+document.querySelector("popup-b-mobile .client-cabinet").addEventListener('click', event => {
+	event._isClickWithInMen = true;
+});
+document.getElementById("popup-b-mobile").addEventListener('click', event => {
+	if (event._isClickWithInMen) return;
+	event.currentTarget.classList.remove("open")
+});
+
+document.querySelector("popup-b-mobile .popup-basket").addEventListener('click', event => {
+	event._isClickWithInMen = true;
+});
+document.getElementById("popup-b-mobile").addEventListener('click', event => {
+	if (event._isClickWithInMen) return;
+	event.currentTarget.classList.remove("open")
+});
